@@ -19,7 +19,7 @@
             xmlns:card_view="http://schemas.android.com/apk/res-auto"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/item_note_bg"
+            card_view:cardCornerRadius="70dp"
             card_view:cardPreventCornerOverlap="false"
             android:layout_margin="6dp"
             card_view:cardElevation="10dp">
@@ -38,10 +38,8 @@
 
                 <com.google.android.material.checkbox.MaterialCheckBox
                     android:id="@+id/checkbox"
-                    style="@style/Widget.Todo.CheckBox"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:checked="false"
                     android:layout_alignParentEnd="true"
                     app:useMaterialThemeColors="true" />
             </RelativeLayout>

@@ -43,7 +43,7 @@ class Repository @Inject constructor(
             ?.updateAnExistingRow(
                 id, "1"
             )
-        return "Task edited"
+        return "Todo edited"
     }
 
     private fun makeTaskInactive(context: Context, id: Int): String {
@@ -52,6 +52,6 @@ class Repository @Inject constructor(
             ?.updateAnExistingRow(
                 id, "0"
             )
-        return "Task edited"
+        return "Todo edited"
     }
 }

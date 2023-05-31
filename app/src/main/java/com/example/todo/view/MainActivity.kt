@@ -57,7 +57,6 @@ class MainActivity : AppCompatActivity(), TodoListener {
 
                 is Resource.Success -> {
                     lifecycleScope.launch {
-                        Toast.makeText(this@MainActivity, it.value, Toast.LENGTH_SHORT).show()
                         viewModel.getTodoList(this@MainActivity)
 
                     }

@@ -53,7 +53,7 @@ class CreateTaskSheet(listener: TodoListener) : BottomSheetDialogFragment() {
 
             override fun onPostExecute(aVoid: Void?) {
                 super.onPostExecute(aVoid)
-                Toast.makeText(getActivity(), "Your event is been added", Toast.LENGTH_SHORT).show()
+                Toast.makeText(getActivity(), "Todo Created", Toast.LENGTH_SHORT).show()
                 dismiss()
                 listener.noteAdded()
             }
